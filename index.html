@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meu Vlog - Página Inicial</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index-specific.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Meu Vlog</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="pesquisa.html">Pesquisa</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="dark-mode-btn" id="dark-mode-toggle">
+          <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+          <svg class="moon-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
+        <button class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h1>Bem-vindo ao Meu Vlog</h1>
+      <p class="intro-text">Olá! Sou apaixonado por compartilhar conhecimento e experiências através de vídeos. Aqui você encontrará conteúdo sobre tecnologia, ciência, e muito mais!</p>
+      <div class="intro-buttons">
+        <a href="sobre.html" class="btn btn-primary">Saiba Mais</a>
+        <a href="pesquisa.html" class="btn btn-secondary">Ver Vídeos</a>
+      </div>
+    </section>
+
+    <section class="videos">
+      <h2>Vídeos Recentes</h2>
+      <p class="section-description">Confira os últimos vídeos que publiquei sobre diversos temas interessantes.</p>
+      <div class="video-grid">
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>Como Criar um Site Responsivo</h3>
+          <p>Aprenda as melhores práticas para criar sites que funcionam perfeitamente em qualquer dispositivo.</p>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>Introdução ao JavaScript</h3>
+          <p>Um guia completo para iniciantes que querem aprender JavaScript do zero.</p>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>Dicas de Produtividade</h3>
+          <p>Descubra técnicas eficazes para aumentar sua produtividade no dia a dia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <h2>Acesso Rápido</h2>
+      <div class="links-grid">
+        <a href="sobre.html" class="quick-link-card">
+          <i class="fas fa-user"></i>
+          <h3>Sobre Mim</h3>
+          <p>Conheça um pouco mais sobre minha história e experiência.</p>
+        </a>
+        <a href="pesquisa.html" class="quick-link-card">
+          <i class="fas fa-search"></i>
+          <h3>Pesquisas</h3>
+          <p>Explore os projetos e pesquisas que desenvolvo.</p>
+        </a>
+        <a href="contato.html" class="quick-link-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Entre em Contato</h3>
+          <p>Entre em contato comigo para dúvidas, sugestões ou parcerias.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Meu Vlog. Todos os direitos reservados.</p>
+      <div class="social-links">
+        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prof. Dr. João Silva - Orientações Acadêmicas</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contato-specific.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Prof. Dr. João Silva</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="pesquisa.html">Pesquisa</a></li>
+        <li><a href="contato.html" class="active">Contato</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="dark-mode-btn" id="dark-mode-toggle">
+          <svg class="sun-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+          <svg class="moon-icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
+        <button class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero-profile">
+      <div class="profile-header">
+        <div class="profile-image">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="profile-info">
+          <h1>Orientações Acadêmicas</h1>
+          <p class="profile-title">Coordenação de Programas de Pós-Graduação</p>
+          <p class="profile-subtitle">Orientação de Mestrandos e Doutorandos • Colaboração Internacional • Projetos de Pesquisa</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <h2><i class="fas fa-info-circle"></i> Informações Acadêmicas</h2>
+      <div class="areas-grid">
+        <div class="area-card">
+          <i class="fas fa-envelope"></i>
+          <h3>E-mail Institucional</h3>
+          <p>joao.silva@uf.edu.br</p>
+          <p class="contact-note">Resposta em até 48 horas</p>
+        </div>
+        <div class="area-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Departamento</h3>
+          <p>Departamento de Metodologia</p>
+          <p class="contact-note">Universidade Federal</p>
+        </div>
+        <div class="area-card">
+          <i class="fas fa-clock"></i>
+          <h3>Atendimento Acadêmico</h3>
+          <p>Segunda a Sexta</p>
+          <p class="contact-note">14h às 18h (com agendamento)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2><i class="fas fa-paper-plane"></i> Solicitação de Orientação</h2>
+      <p class="section-description">Para solicitar orientação acadêmica, colaboração em projetos de pesquisa ou informações sobre programas de pós-graduação, utilize o formulário abaixo:</p>
+      
+      <form action="#" method="POST" class="contact-form-content">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nome">Nome Completo *</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail Institucional *</label>
+            <input type="email" id="email" name="email" required placeholder="seu@email.edu.br" />
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="instituicao">Instituição de Origem</label>
+          <input type="text" id="instituicao" name="instituicao" placeholder="Sua instituição atual" />
+        </div>
+
+        <div class="form-group">
+          <label for="assunto">Tipo de Solicitação</label>
+          <select id="assunto" name="assunto">
+            <option value="">Selecione o tipo de solicitação</option>
+            <option value="orientacao-mestrado">Orientação de Mestrado</option>
+            <option value="orientacao-doutorado">Orientação de Doutorado</option>
+            <option value="colaboracao-pesquisa">Colaboração em Projeto de Pesquisa</option>
+            <option value="informacoes-pos">Informações sobre Pós-Graduação</option>
+            <option value="proposta-colaboracao">Proposta de Colaboração Internacional</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="area-pesquisa">Área de Pesquisa de Interesse</label>
+          <select id="area-pesquisa" name="area-pesquisa">
+            <option value="">Selecione a área de interesse</option>
+            <option value="metodologias-avancadas">Metodologias Avançadas de Pesquisa</option>
+            <option value="inovacao-educacional">Inovação Educacional</option>
+            <option value="pesquisa-interdisciplinar">Pesquisa Interdisciplinar</option>
+            <option value="analise-dados">Análise de Dados Complexos</option>
+            <option value="transformacoes-digitais">Transformações Digitais</option>
+            <option value="outra">Outra área</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Descrição da Solicitação *</label>
+          <textarea id="mensagem" name="mensagem" required placeholder="Descreva detalhadamente sua solicitação, incluindo objetivos de pesquisa, experiência acadêmica e motivação..." rows="6"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i>
+          Enviar Solicitação
+        </button>
+      </form>
+    </section>
+
+    <section class="social-contact">
+      <h2><i class="fas fa-share-alt"></i> Plataformas Acadêmicas</h2>
+      <p class="section-description">Acesse minhas plataformas acadêmicas para mais informações sobre publicações, projetos de pesquisa e colaborações.</p>
+      <div class="social-grid">
+        <a href="#" class="social-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Currículo Lattes</h3>
+          <p>Perfil completo no sistema Lattes do CNPq</p>
+        </a>
+        <a href="#" class="social-card">
+          <i class="fab fa-researchgate"></i>
+          <h3>ResearchGate</h3>
+          <p>Publicações e projetos de pesquisa</p>
+        </a>
+        <a href="#" class="social-card">
+          <i class="fas fa-search"></i>
+          <h3>Google Scholar</h3>
+          <p>Perfil acadêmico e citações</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Prof. Dr. João Silva - Universidade Federal</p>
+      <div class="social-links">
+        <a href="#" title="Lattes"><i class="fas fa-graduation-cap"></i></a>
+        <a href="#" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+        <a href="#" title="Google Scholar"><i class="fas fa-search"></i></a>
+        <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

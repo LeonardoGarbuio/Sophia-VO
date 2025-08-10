@@ -1,0 +1,107 @@
+/* CSS Específico para sobre.html - Centralização de Cards */
+
+/* Fundo adicional para todos os componentes da página sobre */
+.hero-profile {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 64, 128, 0.08);
+}
+
+/* Modo escuro para todos os componentes da página sobre */
+body.dark-mode .hero-profile,
+body.dark-mode .bio,
+body.dark-mode .formacao,
+body.dark-mode .experiencia,
+body.dark-mode .areas-atuacao,
+body.dark-mode .premios,
+body.dark-mode .curriculo-download {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bio {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 64, 128, 0.08);
+}
+
+.formacao {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 64, 128, 0.08);
+}
+
+.experiencia {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 64, 128, 0.08);
+}
+
+.areas-atuacao {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 64, 128, 0.08);
+}
+
+.premios {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 64, 128, 0.08);
+}
+
+.curriculo-download {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 64, 128, 0.08);
+}
+
+/* Centralizar qualquer card que esteja sozinho na linha */
+@media (min-width: 993px) {
+  .experiencia .experience-grid:has(.experience-card:last-child:nth-child(odd)) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .experiencia .experience-grid .experience-card:only-child,
+  .experiencia .experience-grid .experience-card:last-child:nth-child(odd) {
+    justify-self: center !important;
+    grid-column: 1 / 3 !important;
+  }
+}
+
+/* Centralizar qualquer card que esteja sozinho na linha */
+@media (min-width: 993px) {
+  .areas-atuacao .areas-grid:has(.area-card:last-child:nth-child(odd)) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .areas-atuacao .areas-grid .area-card:only-child,
+  .areas-atuacao .areas-grid .area-card:last-child:nth-child(odd) {
+    justify-self: center !important;
+    grid-column: 1 / 3 !important;
+  }
+}
+
+/* Centralizar qualquer card que esteja sozinho na linha */
+@media (min-width: 993px) {
+  .premios .awards-grid .award-item:only-child,
+  .premios .awards-grid .award-item:last-child:nth-child(odd) {
+    justify-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}

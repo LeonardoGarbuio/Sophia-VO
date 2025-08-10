@@ -1,0 +1,27 @@
+/* CSS Específico para contato.html - Centralização de Cards */
+
+/* Centralizar qualquer card que esteja sozinho na linha */
+@media (min-width: 993px) {
+  .contact-info .areas-grid:has(.area-card:last-child:nth-child(odd)) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .contact-info .areas-grid .area-card:only-child,
+  .contact-info .areas-grid .area-card:last-child:nth-child(odd) {
+    justify-self: center !important;
+    grid-column: 1 / 3 !important;
+  }
+}
+
+/* Centralizar qualquer card que esteja sozinho na linha */
+@media (min-width: 993px) {
+  .social-contact .social-grid:has(.social-card:last-child:nth-child(odd)) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .social-contact .social-grid .social-card:only-child,
+  .social-contact .social-grid .social-card:last-child:nth-child(odd) {
+    justify-self: center !important;
+    grid-column: 1 / 3 !important;
+  }
+}

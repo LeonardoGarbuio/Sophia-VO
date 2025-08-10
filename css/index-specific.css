@@ -1,0 +1,66 @@
+/* CSS Específico para index.html - Centralização de Cards */
+
+/* Fundo branco forte para a main da home (MUITO ENGORDADA) */
+.container {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
+  box-shadow: 0 4px 20px rgba(0, 64, 128, 0.08);
+  border: 1px solid rgba(0, 64, 128, 0.05);
+  max-width: 1800px;
+  margin: 30px auto 80px;
+}
+
+/* Modo escuro para a main da home */
+body.dark-mode .container {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Centralizar o card "Entre em Contato" na seção de links rápidos */
+@media (min-width: 993px) {
+  .quick-links .links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .quick-links .links-grid .quick-link-card:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 350px;
+  }
+}
+
+/* Centralizar o último vídeo na seção de vídeos recentes */
+@media (min-width: 993px) {
+  .videos .video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .videos .video-grid .video-card:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 400px;
+  }
+}
+
+/* Para telas menores, manter o layout original */
+@media (max-width: 992px) {
+  .quick-links .links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .videos .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+  }
+}

@@ -1,0 +1,40 @@
+/* CSS Específico para pesquisa.html - Centralização de Cards */
+
+/* Centralizar qualquer card que esteja sozinho na linha */
+@media (min-width: 993px) {
+  .projetos .experience-grid:has(.project-card:last-child:nth-child(odd)) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .projetos .experience-grid .project-card:only-child,
+  .projetos .experience-grid .project-card:last-child:nth-child(odd) {
+    justify-self: center !important;
+    grid-column: 1 / 3 !important;
+  }
+}
+
+/* Centralizar qualquer card que esteja sozinho na linha */
+@media (min-width: 993px) {
+  .artigos .areas-grid:has(.article-card:last-child:nth-child(odd)) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .artigos .areas-grid .article-card:only-child,
+  .artigos .areas-grid .article-card:last-child:nth-child(odd) {
+    justify-self: center !important;
+    grid-column: 1 / 3 !important;
+  }
+}
+
+/* Centralizar qualquer card que esteja sozinho na linha */
+@media (min-width: 993px) {
+  .metodologias .areas-grid:has(.methodology-card:last-child:nth-child(odd)) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .metodologias .areas-grid .methodology-card:only-child,
+  .metodologias .areas-grid .methodology-card:last-child:nth-child(odd) {
+    justify-self: center !important;
+    grid-column: 1 / 3 !important;
+  }
+}
